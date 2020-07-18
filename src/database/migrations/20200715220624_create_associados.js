@@ -1,6 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable("associados", function (table) {
-    table.string("id").primary();
+    table.string("id").notNullable().primary();
     table.string("tipo").notNullable();
     table.string("patrocinador");
     table.string("nome").notNullable();
