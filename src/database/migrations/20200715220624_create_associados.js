@@ -10,9 +10,9 @@ exports.up = function (knex) {
     table.string("endereco").notNullable();
     table.string("bairro").notNullable();
     table.string("cidade").notNullable();
-    table.string("banco").notNullable();
-    table.string("agencia").notNullable();
-    table.string("conta").notNullable();
+    table.string("banco");
+    table.string("agencia");
+    table.string("conta");
   });
 };
 
